@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Cart from "./component/Cart";
+import Modal from "./component/Modal";
+import Backdrop from "./component/Backdrop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>My todos</h1>
+      <Cart text='My first todo list'/>
+      <Cart text='My second todo list'/>
+      <Cart text='My third todo list'/>
+      <Modal/>
+      <Backdrop/>
     </div>
   );
 }
