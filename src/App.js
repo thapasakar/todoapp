@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Cart from "./component/Cart";
-import Modal from "./component/Modal";
-import Backdrop from "./component/Backdrop";
+
+
 
 function App() {
   return (
@@ -10,9 +10,7 @@ function App() {
       <h1>My todos</h1>
       <Cart text='My first todo list'/>
       <Cart text='My second todo list'/>
-      <Cart text='My third todo list'/>
-      <Modal/>
-      <Backdrop/>
+      <Cart text='My third todo list'/>     
     </div>
   );
 }
